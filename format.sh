@@ -28,16 +28,16 @@ LIST=false
 VERBOSE=false
 while getopts "lv" opt; do
     case $opt in
-      l)
-          LIST=true
-          ;;
-      v)
-          VERBOSE=true
-          ;;
-      \?)
-          echo "Invalid option: -$OPTARG" >&2
-          exit 1
-          ;;
+        l)
+            LIST=true
+            ;;
+        v)
+            VERBOSE=true
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            exit 1
+            ;;
     esac
 done
 shift "$((OPTIND - 1))"
